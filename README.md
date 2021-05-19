@@ -25,7 +25,7 @@ Next, you will need to navigate to the flight_search.py file and fill-in your AP
 <img src="https://github.com/nicolasvilleneuve/FlightDealWebScraper/blob/main/figures/Figure2.png" alt="Figure2">
 
 Finally, you will need to navigate to the data_manager.py file and fill-in the endpoint for your google sheet (which is to contain you flight destination, destination code, and desired price). This is exemplified by line 5, or figure 3, below. 
-<img src="https://github.com/nicolasvilleneuve/FlightDealWebScraper/blob/main/figures/Figure1.png" alt="Figure3"> 
+<img src="https://github.com/nicolasvilleneuve/FlightDealWebScraper/blob/main/figures/Figure3.png" alt="Figure3"> 
 
 
 ## Contributing/Support
