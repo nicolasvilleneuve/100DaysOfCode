@@ -4,14 +4,14 @@ from flight_search import FlightSearch
 from notification_manager import NotificationManager
 
 
-GOOGLE_FLIGHT_ENDPOINT = 'https://www.google.co.uk/flights'
+GOOGLE_FLIGHT_ENDPOINT = 'https://www.google.ca/flights'
 
 data_manager = DataManager()
 sheet_data = data_manager.get_destination_data()
 flight_search = FlightSearch()
 notification_manager = NotificationManager()
 
-ORIGIN_CITY_IATA = "LON"
+ORIGIN_CITY_IATA = "YYZ"
 
 if sheet_data[0]["iataCode"] == "":
     for row in sheet_data:
@@ -41,7 +41,7 @@ for destination_code in destinations:
         continue
 
     if flight.price < destinations[destination_code]["price"]:
-        message=f"Low price alert! Only GBP{flight.price} to fly from {flight.origin_city}-{flight.origin_airport} to " \
+        message=f"Low price alert! Only CDN${flight.price} to fly from {flight.origin_city}-{flight.origin_airport} to " \
                 f"{flight.destination_city}-{flight.destination_airport}, from {flight.out_date} to {flight.return_date}." \
                 f"{GOOGLE_FLIGHT_ENDPOINT}?hl=en#flt={flight.origin_airport}.{flight.destination_airport}.{flight.out_date}*{flight.destination_airport}.{flight.origin_airport}.{flight.return_date}"
 
