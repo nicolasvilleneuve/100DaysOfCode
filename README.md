@@ -14,17 +14,26 @@ sheety API, the tequila API, the Twilio API, SMTPLib (which, in order to use, yo
 the json module, the datetime module. While as I am aware I could simply export all of my credentials to the environment and pull those to make this program work directly with this code, 
 that would compromise all of my credentials. 
 
+
 Below, you will find figures to detail exactly what lines of code you need to change in order for this program to work for you too. 
 
+
+The first batch of code that you will need to sub-out is lines 7 to 13 of the notifications_manager.py file. This is exemplified by Figure 1, below. 
+<img src="https://github.com/nicolasvilleneuve/FlightDealWebScraper/blob/main/figures/Figure1.png" alt="Figure1">
+
+Next, you will need to navigate to the flight_search.py file and fill-in your API key for usage of the tequila-API (exemplified by lines 6 and 7 of Figure 2, below).
+<img src="https://github.com/nicolasvilleneuve/FlightDealWebScraper/blob/main/figures/Figure2.png" alt="Figure2">
+
+Finally, you will need to navigate to the data_manager.py file and fill-in the endpoint for your google sheet (which is to contain you flight destination, destination code, and desired price). This is exemplified by line 5, or figure 3, below. 
+<img src="https://github.com/nicolasvilleneuve/FlightDealWebScraper/blob/main/figures/Figure1.png" alt="Figure3"> 
 
 
 ## Contributing/Support
 If you would like to create a PULL request, please feel free. Whether the intent be to pilfer from the code as you like some elements of the app, or to suggest improvements, you are most welcome to. If the changes are to be major, however, please open an issue first so we can discuss if/what you would like to change. Should you have a problem in doing so, please feel free to let me know (my email is on my website (nicolasvilleneuve.github.io/Portfolio or nicolasvilleneuve.pythonanywhere.com so please find it there in case it has changed since writing this).
 
 
-
 ## License
-##License MIT License
+MIT License
 
 Copyright (c) 2021 Nicolas Villeneuve
 
