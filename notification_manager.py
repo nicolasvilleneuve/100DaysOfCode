@@ -9,7 +9,7 @@ TWILIO_AUTH_TOKEN = os.environ['AUTH_TOKEN']
 TWILIO_VIRTUAL_NUMBER = os.environ['VIRTUAL_NUMBER']
 TWILIO_VERIFIED_NUMBER = os.environ['VERIF_NUMBER']
 
-my_email = os.environ('EMAIL')
+my_email = os.environ['EMAIL']
 my_password = os.environ['EMAIL_PASS']
 
 class NotificationManager:
